@@ -1,0 +1,103 @@
+/* 전역 설정 */
+* {margin: 0; padding: 0;}
+*{list-style:none;}
+.width-wrap{width: 988px; margin: 0 auto;}
+footer{background-color: #ccc; padding: 50px;}
+header nav{background-color: #222; }
+.clearfix::after{content: ''; display: block; clear: both;}
+footer {text-align:center;}
+.logo-area .width-wrap {background: url('https://www.tjoeun.co.kr/images/logo.gif?v=20190918') no-repeat #ccc left center;
+		padding: 50px; text-align: right;
+}
+a {text-decoration: none; color:#222;}
+
+.form-control p{margin: 16px 0 8px;}
+.form-control input{width: calc(100% - 1em - 5px); 
+    padding: .5em;}
+
+.btn {border: 0; padding: 16px;  border-radius: 8px; cursor: pointer; vertical-align: bottom;}
+.btn-block {width: 100%;}
+
+.btn-primary {background-color: #f39c12; color: white; transition: .3s all .05s; border: 1px solid #f39c12; }
+.btn-primary:hover {background-color: #d38d1e; border-color: #d38d1e}
+.text-center {text-align: center;}
+.text-right {text-align: right;}
+
+/* index */
+.index > * {float: left;}
+.index article{height: 600px; width: 665px; padding: 30px;}
+.index aside{width: 200px; padding: 30px;}
+.index aside a:first-child{text-decoration: none; display: inline-block; color: #fff; font-weight: bold;
+    background-color: #f39c12; padding: 30px 0; text-align: center; width: 100%;}
+
+/* signin */
+.signin{width: 500px; margin: 150px auto;}
+
+/* board */
+.board {padding-bottom: 50px;}
+.board h2{margin: 30px; text-align: center;}
+.board table{width: 100%; border-collapse: collapse; margin: 10px auto 50px;}
+.board th, .board td {padding: 10px; border-top: 1px solid black; border-bottom: 1px solid black;}
+.board-list td:not(:nth-child(2)) {text-align: center;}
+.board-list td:nth-child(2) {width: 60%;}
+.board-view td-content{heigh: 200px; padding: 30px; vertical-align: top;}
+.board-view input, .board-view select{padding: .5em; width:calc(100% - 1em);}
+.board-view textarea {width: calc(100% - 2em); height: 300px; resize: none; padding: 1em;}
+.board .btn-area {text-align: right;}
+.td-content {width: 100%; height: 300px; resize: none;}
+
+
+.board a:hover,  .board a:focus{text-decoration: underline;}
+
+/* board-list */
+.pagination{display: flex; justify-content: center;}
+.pagination.pagination a {
+	display: inline-block; padding: .5em .8em; border: 1px solid #ddd; border-right:none; text-decoration: none;
+	transition: .1s all .05s;
+	}
+.pagination a:first-child{ border-top-left-radius: 1em; border-bottom-left-radius: .5em; }
+.pagination a:last-child{ border-right:1px solid #ddd; border-top-right-radius: .3em; border-bottom-right-radius: .3em; }
+.pagination a.active {background: orange; color:white; font-weight: bold;}
+.pagination a:not(.direct):focus, .pagination a:not(.direct):hover {background: #bf810e; color:white; font-weight: bold;}  
+
+.search-area form{display: inline-block; width: 50%;}
+.search-area select, .search-area input, .search-area button{padding: .5em;}
+.search-area > select {float: right;}
+
+/* board reply */
+.reply-area {padding:30px 10px;}
+.reply-area .reply-write {padding: 10px;}
+.reply-area .reply-content textarea, 
+.reply-write textarea, 
+.reply-area .reply-write .reply-not-login {width: 100%; margin-top: 20px; height: 150px; resize: none;}
+#replyWrite .reply-not-login {font-size: 14px; border: 1px solid rgba(118, 118, 118, 0.3); 
+				background: rgba(239, 239, 239, 0.3); color: rgb(170, 170, 170); cursor: pointer;}
+.reply-area .replies {padding: 10px; border-top: 1px #ddd solid;}
+.reply-area .replies li {border-bottom: 1px solid #ddd; padding: 15px 0; position: relative;}
+.reply-area .replies .reply-writer {font-weight: bold; float: left;}
+.reply-area .replies .reply-menu-link {float: right; color: #aaa; padding: 16px;}
+.reply-area .replies i {float: right; color: #aaa; cursor: pointer;}
+.reply-area .replies .reply-content {font-size: 13px; margin: 20px 0 10px}
+.reply-area .replies .reply-regdate {color: #aaa; font-size: 13px;}
+
+.replies li .reply-tooltip {position: absolute; right: 0; top: 45px; border: 1px solid #ccc; background: #fff; z-index: 10; display: none;}
+.replies li .reply-tooltip.active {display: block;}
+.replies li .reply-tooltip a {font-size: 14px; display: block; padding: 1em 3em;}
+.replies li .reply-tooltip a:not(last-child) {border-bottom: 1px solid #ccc;}
+
+
+/* layer popup */
+.layer{position: fixed; top: 100px; right: 300px; display: none;}
+.layer p {padding: 8px; background-color: black; color: white; margin-top: -4px;}
+.layer p a {float: right; color: white; text-decoration: none;}
+.layer p input {margin-left: 10px;}
+
+/* header */
+.gnb {background: #222;}
+.gnb > li {float: left; margin:30px; position: relative; }
+.gnb > li a{color:white; text-decoration:none;}
+.gnb > li ul{position: absolute; background: #222; width: 120px; padding: 10px 0; display: none; left: -20px; }
+.gnb > li:hover ul{display: block;}
+.gnb > li ul li {margin: 10px 15px;}
+.gnb > a:hover{margin-left: 10px;}
+
