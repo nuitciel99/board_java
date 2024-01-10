@@ -1,19 +1,16 @@
-# Spring Boot Security With JWT
+# Board with servlet
 
-# Api test with swagger
+# Package
 
-- Swagger Main
+- Member : 회원 관리
+- Board : 게시판
+- domain : DB table & paging
+- Controller
+- Filter
+- Service
+- Util : DB & Upload
 
-![api 목록](./readMeImgs/swaggermain.png)
+# Service
 
-- Swagger SignUp
-
-![api 목록](./readMeImgs/swaggersignup.png)
-
-- Swagger Login
-
-![api 목록](./readMeImgs/swaggerlogin.png)
-
-- JWT.io
-
-![api 목록](./readMeImgs/jwtio.png)
+- Member : 회원가입, 로그인, 마이페이지, 비밀 번호 수정
+- Board : 글 작성(+ 첨부파일), 수정, 삭제, 상세보기, 댓글 CRUD
